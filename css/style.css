@@ -1,0 +1,202 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+    color: #1d1d1d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 42px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+/*==========header==========*/
+.main-header {
+    background: url("../img/main-bg.png") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+}
+
+.main-header .navbar-brand, .main-header a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-header .navbar-brand {
+    font-size: 41px;
+}
+
+.main-header a {
+    font-size: 17px;
+}
+
+.main-header a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+}
+
+.main-header a:hover::after {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.main-header p {
+    font-size: 23px;
+}
+
+.main-header .navbar-toggler {
+    color: white;
+}
+
+.main-header-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    max-width: 780px;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+.main-headers-buttons {
+    padding-left: 30px;
+    margin-top: 40px;
+}
+
+.main-headers-buttons .btn {
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn-pink {
+    background-color: #f42267;
+    margin-right: 20px;
+}
+
+.btn-violet {
+    background-color: #703390;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0.8;
+    box-shadow: 1.169px 3.825px 16px 0 rgba(1, 2, 2, 0.35);
+    transition: all 0.5s;
+}
+
+
+.btn:hover {
+    color: white;
+    opacity: 1;
+}
+
+
+/*large Device*/
+@media only screen and (max-width: 1440px) {
+    .main-header-text {
+        left: 5%;
+        max-width: 670px;
+    }
+
+    h4 {
+        font-size: 54px;
+    }
+
+
+}
+
+/*large Device*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*Medium Device*/
+@media only screen and (max-width: 991px) {
+    .main-header-text {
+        background-color: rgba(0, 0, 0, 0.21);
+    }
+
+    .navbar-nav {
+        background: linear-gradient(45deg, rgba(151, 17, 34, 1) 0%, rgba(64, 24, 64, 1) 100%);
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+        width: 200px;
+        text-align: center;
+    }
+}
+
+/*small Device*/
+@media only screen and (max-width: 768px) {
+    .main-header-text {
+        left: 0;
+        max-width: 100%;
+    }
+    h4 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header-text {
+        top: 90px;
+    }
+
+    .main-header p {
+        font-size: 18px;
+    }
+
+    h3, h4 {
+        font-size: 30px;
+    }
+
+    .main-headers-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/*extra small Device*/
+@media only screen and (max-width: 480px) {
+    .main-header-text {
+        background: none;
+    }
+}
+
+/*extra small Device*/
+@media only screen and (max-width: 380px) {
+    .navbar-brand span {
+        font-size: 30px;
+    }
+
+}
