@@ -119,7 +119,177 @@ h4 {
     opacity: 1;
 }
 
+/*========section watch===========*/
+.section-watch {
+    background: url("../img/world-map.png") center no-repeat;
+    background-size: cover;
+}
 
+section h4 {
+    font-size: 46px;
+    color: #484848;
+}
+
+section h3 {
+    font-size: 33px;
+    color: #484848;
+}
+
+.section-tabs .nav-pills .nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #484848;
+    padding: 14px 30px;
+}
+
+.section-watch .tab-content {
+    max-width: 89%;
+}
+
+.btn-shadow {
+    border-radius: 10px;
+    box-shadow: 0 10px 0 rgb(255, 89, 144);
+    transition: all .5s;
+    padding: 10px 15px;
+    margin-top: 40px;
+}
+
+.btn-shadow:hover {
+    box-shadow: 0 5px 0 rgb(255, 89, 144);
+}
+
+.section-tabs .nav-pills {
+    margin-bottom: 20px;
+}
+
+.section-tabs .nav-item .nav-link.active {
+    background-color: #f42267;
+    color: #fff;
+    box-shadow: 1.169px 3.825px 16px 0 rgba(1, 2, 2, 0.35);
+}
+
+/*=================section progress========================*/
+.section-progress {
+    background-color: #4b2d7f;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0;
+}
+
+.section-progress .num {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.section-progress h4 {
+    font-size: 30px;
+    height: 72px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.section-progress .progress-item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    transition: all 0.3s;
+}
+
+.section-progress .progress-item:hover {
+    background-color: #40286a;
+}
+
+/*================section-lets=============================*/
+.section-lets {
+    background: url("../img/letsgrow.png") center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.section-lets h3, .section-lets h4 {
+    color: #ffffff;
+}
+.section-lets .btn-shadow {
+    margin-top: 25px;
+}
+
+.section-lets h3{
+    font-size: 48px;
+}
+/*================section-design=============================*/
+.section-design span i{
+    font-size: 75px;
+    background: linear-gradient(45deg, rgb(221,22,76) 0%, rgb(93,10,168) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-design span {
+    margin-left: 15px;
+}
+
+.section-design h2{
+    font-size: 25px;
+    color: rgb(72, 72, 72);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.section-design .section-design-text{
+    font-size: 14px;
+}
+.section-design .btn-shadow{
+    margin-top: 10px;
+}
+#videoPlayBtn{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background: url("../img/play.png") center no-repeat;
+
+}
+
+.embed-responsive {
+    border-radius: 10px;
+}
+
+.player-image {
+    max-width: 500px;
+    position: relative;
+}
+
+/*===============section-work===================*/
+.section-work {
+    background-color: #f1f1f1;
+}
+.section-work p{
+    font-size: 20px;
+    color: #333;
+}
+
+.section-work .nav-pills {
+    margin: 30px 0;
+}
+
+.gallery-item {
+    margin-bottom: 23px;
+    border-radius: 5px;
+}
+.gallery a img{
+    transition: all 0.5s;
+}
+
+.gallery a:hover img{
+    box-shadow: 0 14px 30px -15px rgba(0,0,0,0.74);
+}
+
+/*=================section brand===========================*/
+.section-brands {
+    background-color: #4b2d7f;
+}
 /*large Device*/
 @media only screen and (max-width: 1440px) {
     .main-header-text {
@@ -130,8 +300,6 @@ h4 {
     h4 {
         font-size: 54px;
     }
-
-
 }
 
 /*large Device*/
@@ -161,8 +329,14 @@ h4 {
         left: 0;
         max-width: 100%;
     }
+
     h4 {
         font-size: 48px;
+    }
+
+    .section-progress .progress-item {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -175,14 +349,26 @@ h4 {
         font-size: 18px;
     }
 
-    h3, h4 {
+    h4, section h4 {
         font-size: 30px;
+    }
+
+    h3, section h3 {
+        font-size: 28px;
     }
 
     .main-headers-buttons .btn {
         display: block;
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-work p {
+        font-size: 16px;
     }
 }
 
@@ -191,6 +377,23 @@ h4 {
     .main-header-text {
         background: none;
     }
+
+    .section-tabs .nav-pills .nav-link {
+        padding: 8px 16px;
+    }
+
+    .btn-shadow {
+        box-shadow: 0 5px 0 rgb(255, 89, 144);
+        padding: 5px 10px;
+    }
+
+    .section-lets h3{
+        font-size: 28px;
+    }
+    .section-lets h4{
+        font-size: 35px;
+    }
+
 }
 
 /*extra small Device*/
@@ -199,4 +402,23 @@ h4 {
         font-size: 30px;
     }
 
+    .section-tabs .nav-pills {
+        max-width: 200px;
+    }
+
+    h4, section h4,.section-lets h4 {
+        font-size: 28px;
+    }
+
+    h3, section h3,.section-lets h3 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .section-work p {
+        font-size: 14px;
+    }
 }
