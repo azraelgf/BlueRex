@@ -25,6 +25,31 @@ h4 {
     margin-bottom: 20px;
 }
 
+.scrollToTop {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    border-radius: 4px;
+    /*display: none;*/
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    z-index: 1001;
+    color:#ffffff;
+    background-color: #da1757;
+    transition: all .5s;
+    border: 0;
+    cursor: pointer;
+}
+
+.scrollToTop:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #da1757;
+    outline: none;
+    border: 1px solid #da1757;
+}
+
 /*==========header==========*/
 .main-header {
     background: url("../img/main-bg.png") center no-repeat;
@@ -206,20 +231,23 @@ section h3 {
     background-size: cover;
     color: #ffffff;
 }
+
 .section-lets h3, .section-lets h4 {
     color: #ffffff;
 }
+
 .section-lets .btn-shadow {
     margin-top: 25px;
 }
 
-.section-lets h3{
+.section-lets h3 {
     font-size: 48px;
 }
+
 /*================section-design=============================*/
-.section-design span i{
+.section-design span i {
     font-size: 75px;
-    background: linear-gradient(45deg, rgb(221,22,76) 0%, rgb(93,10,168) 100%);
+    background: linear-gradient(45deg, rgb(221, 22, 76) 0%, rgb(93, 10, 168) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -228,20 +256,22 @@ section h3 {
     margin-left: 15px;
 }
 
-.section-design h2{
+.section-design h2 {
     font-size: 25px;
     color: rgb(72, 72, 72);
     font-weight: 600;
     margin-top: 15px;
 }
 
-.section-design .section-design-text{
+.section-design .section-design-text {
     font-size: 14px;
 }
-.section-design .btn-shadow{
+
+.section-design .btn-shadow {
     margin-top: 10px;
 }
-#videoPlayBtn{
+
+#videoPlayBtn {
     width: 100%;
     height: 100%;
     z-index: 1000;
@@ -265,7 +295,8 @@ section h3 {
 .section-work {
     background-color: #f1f1f1;
 }
-.section-work p{
+
+.section-work p {
     font-size: 20px;
     color: #333;
 }
@@ -278,18 +309,171 @@ section h3 {
     margin-bottom: 23px;
     border-radius: 5px;
 }
-.gallery a img{
+
+.gallery a img {
     transition: all 0.5s;
 }
 
-.gallery a:hover img{
-    box-shadow: 0 14px 30px -15px rgba(0,0,0,0.74);
+.gallery a:hover img {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.74);
 }
 
 /*=================section brand===========================*/
 .section-brands {
     background-color: #4b2d7f;
 }
+
+/*==================section reviews==================================*/
+.section-reviews {
+    background: url("../img/reviews-bg.png") center no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.section-reviews .carousel-caption {
+    top: 5%;
+    bottom: auto;
+    text-align: left;
+}
+
+.section-reviews h3, .section-reviews h4 {
+    color: #ffffff;
+}
+
+.section-reviews .blockquote {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 70px;
+}
+
+.section-reviews .blockquote::before {
+    content: '\201C';
+    float: left;
+    font-size: 150px;
+    font-weight: 500;
+    font-style: italic;
+    color: #f42267;
+    position: absolute;
+    top: -90px;
+    left: -33px;
+}
+
+/*=============section-form==================*/
+.section-form {
+    background: url("../img/form-bg.jpg") center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.section-form h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-form h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.btn-violet.btn {
+    margin-top: 0;
+}
+
+.section-form form {
+    margin-top: 50px;
+}
+
+.section-form .btn-violet {
+    background-color: #4b2d7f;
+}
+
+.btn-violet.btn-shadow {
+    box-shadow: 0 7px 0 #a57ee9;
+}
+
+.btn-violet.btn-shadow:hover {
+    background: #381569;
+    box-shadow: 0 4px 0 #a57ee9;
+}
+
+.section-form .form-control {
+    height: 51px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0;
+    color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.section-form .form-control::placeholder {
+    color: #ffffff;
+}
+
+.section-form .form-control:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+/*========footer===========*/
+.footer {
+    background: url("../img/world-map.png") center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    font-family: Poppins, sans-serif;
+}
+
+.footer h5 {
+    font-size: 25px;
+    color: #4b2d7f;
+    font-weight: 700;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.footer-images img {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.copyright {
+    background-color: #f6f6f6;
+    padding: 50px 0;
+    font-family: Poppins, sans-serif;
+}
+
+.copyright a, .copyright span {
+    color: #171717;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright a::after, .copyright span::after {
+    content: '\00B7';
+    position: absolute;
+    right: -3px;
+}
+
+.copyright ul li:last-child a::after {
+    content: '';
+}
+
 /*large Device*/
 @media only screen and (max-width: 1440px) {
     .main-header-text {
@@ -321,6 +505,21 @@ section h3 {
         width: 200px;
         text-align: center;
     }
+
+    .section-reviews h3, .section-reviews h3 {
+        font-size: 22px;
+    }
+
+    .section-reviews .blockquote {
+        font-size: 17px;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+
+    .section-reviews .blockquote::before {
+        font-size: 100px;
+        top: -40px;
+    }
 }
 
 /*small Device*/
@@ -328,6 +527,10 @@ section h3 {
     .main-header-text {
         left: 0;
         max-width: 100%;
+    }
+
+    .section-brands .brand-item {
+        margin-bottom: 30px;
     }
 
     h4 {
@@ -338,6 +541,11 @@ section h3 {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    .section-reviews .carousel-caption {
+        top: -7%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -363,12 +571,34 @@ section h3 {
         margin-bottom: 15px;
     }
 
-    section {
+    section, .footer {
         padding: 50px 0;
+    }
+
+    .copyright {
+        padding: 25px 0;
     }
 
     .section-work p {
         font-size: 16px;
+    }
+
+    .section-brands .mt-5 {
+        margin-top: 0;
+    }
+
+    .section-brands .brand-item {
+        margin-top: 30px;
+
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .carousel-caption {
+        position: static;
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -387,13 +617,21 @@ section h3 {
         padding: 5px 10px;
     }
 
-    .section-lets h3{
+    .section-form h5 {
+        font-size: 23px;
+    }
+
+    .section-lets h3 {
         font-size: 28px;
     }
-    .section-lets h4{
+
+    .section-lets h4 {
         font-size: 35px;
     }
 
+    .section-reviews .blockquote {
+        margin-top: 25px;
+    }
 }
 
 /*extra small Device*/
@@ -406,11 +644,11 @@ section h3 {
         max-width: 200px;
     }
 
-    h4, section h4,.section-lets h4 {
+    h4, section h4, .section-lets h4 {
         font-size: 28px;
     }
 
-    h3, section h3,.section-lets h3 {
+    h3, section h3, .section-lets h3 {
         font-size: 26px;
     }
 
@@ -419,6 +657,10 @@ section h3 {
     }
 
     .section-work p {
+        font-size: 14px;
+    }
+
+    .copyright a, .copyright span{
         font-size: 14px;
     }
 }
