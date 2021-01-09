@@ -473,6 +473,116 @@ section h3 {
 .copyright ul li:last-child a::after {
     content: '';
 }
+/*===============section-content=======================*/
+.section-content{
+    padding: 40px 0;
+}
+
+.article-preview{
+    border: 1px #cccccc;
+    padding: 20px;
+    transition: all 0.5s;
+    margin-bottom: 30px;
+}
+
+.article-preview:hover {
+    box-shadow: 0 14px 30px -15px rgba(0,0,0,.75);
+}
+
+.article-preview h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.article-preview a {
+    color: #484848;
+    transition: all 0.5s;
+}
+
+.article-preview a:hover {
+    color: #f42267;
+    text-decoration: none;
+}
+
+.article-date{
+    color: #da1757;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.thumb{
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+.article-preview .more {
+    color: #da1757;
+}
+.article-preview .more:hover {
+    text-decoration: underline;
+}
+.widget-categories ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.widget-categories ul li a{
+    padding-left: 10px;
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.widget-categories ul li a:hover{
+    color:#da1757;
+}
+.widget-categories ul li::before{
+    content:'\f138';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #da1757;
+    font-size: 14px;
+}
+
+.widget-title{
+    color: #484848;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.widget-title::after{
+    content: '';
+    height: 2px;
+    position: absolute;
+    left:0;
+    top: 30px;
+    width: 30px;
+    background-color: #da1757;
+}
+/*===============pagination=======================*/
+.page-link{
+    color:#da1757;
+    transition: all 0.5s;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.page-link:hover{
+    background-color: #da1757;
+    color: #ffffff;
+    border-color: #f42267;
+}
+
+.page-item.active .page-link{
+    background-color: #da1757;
+    border-color: #f42267;
+}
 
 /*large Device*/
 @media only screen and (max-width: 1440px) {
@@ -497,7 +607,7 @@ section h3 {
         background-color: rgba(0, 0, 0, 0.21);
     }
 
-    .navbar-nav {
+    .main-header .navbar-nav {
         background: linear-gradient(45deg, rgba(151, 17, 34, 1) 0%, rgba(64, 24, 64, 1) 100%);
         position: relative;
         z-index: 1;
@@ -631,6 +741,10 @@ section h3 {
 
     .section-reviews .blockquote {
         margin-top: 25px;
+    }
+    .thumb{
+        float: none;
+        width: 100%;
     }
 }
 
